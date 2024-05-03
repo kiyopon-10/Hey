@@ -77,7 +77,11 @@ input {
 }
 
 #btn-create{
-    visibility: hidden;
+    width: 315px;
+    background-color: #6e77ce;
+    /* font-size: 14px;
+    font-weight: 500; */
+    border-radius: 5px;
 }
 
 .main-grid-container {
@@ -119,13 +123,11 @@ video {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    margin-left: 350px;
+    margin-left: 278px;
 }
 
 #btn-toggle-audio,
-#btn-toggle-video,
-#btn-share-screen {
-
+#btn-toggle-video {
     display: block;
     background-color: #6e77ce;
     padding: 8px 24px;

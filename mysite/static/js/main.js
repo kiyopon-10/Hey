@@ -388,25 +388,25 @@ function removeVideo(video){
 }
 
 // Get necessary DOM elements
-const btnShareScreen = document.getElementById('btn-share-screen');
+// const btnShareScreen = document.getElementById('btn-share-screen');
 const videoContainer = document.getElementById('video-container');
 
 // Function to handle screen sharing
-async function startScreenSharing() {
-    try {
-        const stream = await navigator.mediaDevices.getDisplayMedia();
-        const videoElement = document.createElement('video');
-        videoElement.srcObject = stream;
-        videoElement.autoplay = true;
-        videoElement.controls = true;
-        videoContainer.appendChild(videoElement);
-    } catch (error) {
-        console.error('Error accessing screen:', error);
-    }
-}
+// async function startScreenSharing() {
+//     try {
+//         const stream = await navigator.mediaDevices.getDisplayMedia();
+//         const videoElement = document.createElement('video');
+//         videoElement.srcObject = stream;
+//         videoElement.autoplay = true;
+//         videoElement.controls = true;
+//         videoContainer.appendChild(videoElement);
+//     } catch (error) {
+//         console.error('Error accessing screen:', error);
+//     }
+// }
 
 // Event listener for screen sharing button
-btnShareScreen.addEventListener('click', startScreenSharing);
+// btnShareScreen.addEventListener('click', startScreenSharing);
 
 var btnSendMsg = document.querySelector('#btn-send-message')
 var messageList = document.querySelector('#message-list')
